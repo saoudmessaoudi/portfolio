@@ -1,0 +1,31 @@
+GET http://localhost:2000/projects
+
+###
+
+GET http://localhost:2000/projects/602e9c885fc6c33670dd9f3f
+
+###
+
+POST http://localhost:2000/projects
+Content-type: application/json
+
+{
+    "title" : "Unity Game",
+    "description" : "Game created with Unity",
+    "type" : "Game Development",
+    "publishedYear" : "2019"
+}
+
+###
+
+DELETE http://localhost:2000/projects/602e9c885fc6c33670dd9f3f
+
+###
+
+PATCH http://localhost:2000/projects/602e9ff883b03e50bc9cf6d1
+Content-type: application/json
+
+{
+    "title" : "New Name"
+    
+}
